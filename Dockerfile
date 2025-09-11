@@ -8,7 +8,7 @@ RUN rustup target add x86_64-unknown-linux-musl
 
 WORKDIR /usr/src/app
 
-COPY Cargo.toml Cargo.lock ./
+COPY . .
 
 RUN cargo fetch
 
